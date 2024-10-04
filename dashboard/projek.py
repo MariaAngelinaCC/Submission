@@ -21,7 +21,7 @@ def create_weekday_weekend_df(df):
     return weekday_weekend_df
 
 # Load cleaned data
-df = pd.read_csv("bike_df.csv")
+df = pd.read_csv("data/bike_df.csv")
 df['dteday'] = pd.to_datetime(df['dteday'])
 
 # Streamlit sidebar for date selection
